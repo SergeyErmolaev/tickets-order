@@ -43,35 +43,39 @@
         </div>
         <div class="header__right-side">
           <form class="header-form" action="/" method="post">
+            
             <div class="header-form__direction">
+              <h2 class="header-form__title">Направление</h2>
               <div class="header-form__item">
                 <input class="header-form__input" type="text" placeholder="Откуда">
-                <img class="header-form__icon" src="" alt="">
+                <img class="header-form__icon" src="./img/svg/pinmap.svg" alt="метка на карте">
               </div>
               <div class="rotate">
-                <img src="./img/svg/rotate.svg" alt="">
+                <img src="./img/png/rotate.png" alt="замена">
               </div>
               <div class="header-form__item">
                 <input class="header-form__input" type="text" placeholder="Куда">
-                <img class="header-form__icon" src="" alt="">
+                <img class="header-form__icon" src="./img/svg/pinmap.svg" alt="метка на карте">
               </div>
             </div>
+            
             <div class="header-form__date">
+              <h2 class="header-form__title">Дата</h2>
               <div class="header-form__item">
-                <input class="header-form__input" type="text" placeholder="ДД/ММ/ГГ">
-                <img class="header-form__icon" src="" alt="">
+                <input id="dateFrom" class="header-form__input" type="text" placeholder="ДД/ММ/ГГ">
+                <img class="header-form__icon" src="./img/svg/calendar.svg" alt="календарь">
               </div>
               <div class="rotate">
-                <img src="" alt="">
+                
               </div>
               <div class="header-form__item">
-                <input class="header-form__input" type="text" placeholder="ДД/ММ/ГГ">
-                <img class="header-form__icon" src="" alt="">
+                <input id="dateWhere" class="header-form__input" type="text" placeholder="ДД/ММ/ГГ">
+                <img class="header-form__icon" src="./img/svg/calendar.svg" alt="календарь">
               </div>
             </div>
             <div class="header-form__submit">
               <div class="header-form__item">
-                <button class="upper-case" type="submit">найти билеты</button>
+                <button class="header-form__submit-btn upper-case typo_size-4" type="submit">найти билеты</button>
               </div>
             </div>
           </form>
@@ -85,5 +89,10 @@
   <footer>
 
   </footer>
+  <script src="./js/datepicker.js"></script>
+  <script>
+    var dateFrom = new Datepicker('#dateFrom');
+    var dateWhere = new Datepicker('#dateWhere');
+  </script>
 </body>
 </html>

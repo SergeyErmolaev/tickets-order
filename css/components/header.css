@@ -4,6 +4,7 @@
   background-size: cover;
   background-position: center center;
   padding-top: var(--gutter-sm);
+  border-bottom: 8px solid var(--color-theme-accent);
 }
 
 .logo {
@@ -39,6 +40,12 @@
 .header__cols {
   display: flex;
   justify-content: center;
+  margin-top: 253px;
+}
+
+.header__left-side {
+  display: flex;
+  align-items: center;
 }
 
 .header__title {
@@ -52,24 +59,87 @@
 .header__right-side {
   max-width: 729px;
   width: 100%;
-  padding: 21px;
+  padding: 79px 21px 52px;
+  background: rgba(41, 41, 41, 0.8);
+  min-height: 566px;
+}
+
+.header-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
 }
 
 .header-form__date, .header-form__direction, .header-form__submit {
   display: flex;
+  flex-wrap: wrap;
+}
+
+.header-form__title {
+  font-size: var(--text-size-lg);
+  color: var(--color-text-contrast);
+  line-height: var(--text-height-lg);
+  margin-bottom: var(--gutter-xs);
+  width: 100%;
+  flex-basis: 100%;
 }
 
 .header-form__item {
   width: 100%;
   max-width: 322px;
+  position: relative;
 }
 
 .header-form__input {
   width: 100%;
+  min-height: 60px;
+  padding-left: 21px;
+}
+
+.header-form__input:-moz-placeholder {
+  color: var(--color-text-secondary);
+}
+
+.header-form__input::-webkit-input-placeholder {
+  color: var(--color-text-secondary);
+}
+
+.header-form__icon {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translate(-17px, -50%);
 }
 
 .rotate {
   width: 24px;
   margin: 8px;
   height: 24px;
+  cursor: pointer;
+  align-self: center;
+}
+
+.header-form__submit {
+  justify-content: end;
+}
+
+.header-form__submit-btn {
+  font-weight: 700;
+  width: 100%;
+  padding: 16px;
+  background-color: var(--color-theme-accent);
+  border-radius: 5px;
+}
+
+.datepicker {
+  width: 100%;
+}
+
+.datepicker__wrapper {
+  width: 100%;
+}
+
+.datepicker__container thead {
+  display: none;
 }

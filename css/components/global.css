@@ -1,16 +1,22 @@
 :root {
+  --color-theme-accent: #FFA800;
+
+  --color-text-secondary: #e5e5e5;
   --color-text-contrast: #fff;
 
   --font-family: 'Roboto', sans-serif;
 
+  --text-size-md: 24px;
   --text-size-lg: 30px;
   --text-size-xl: 36px;
   --text-size-xxl: 72px;
 
+  --text-height-md: 28.13px;
   --text-height-lg: 35.16px;
   --text-height-xl: 42.19px;
   --text-height-xxl: 84.38px;
 
+  --gutter-xs: 8px;
   --gutter-sm: 15px;
   --gutter-md: 25px;
   --gutter-lg: 50px;

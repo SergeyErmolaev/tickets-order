@@ -1,3 +1,28 @@
 .text-thin {
   font-weight: 200;
 }
+
+.upper-case {
+  text-transform: uppercase;
+}
+
+.typo_size-1 {
+  font-size: var(--text-size-xxl);
+  line-height: var(--text-height-xxl);
+  font-weight: 700;
+}
+
+.typo_size-2 {
+  font-size: var(--text-size-xl);
+  line-height: var(--text-height-xl);
+}
+
+.typo_size-3 {
+  font-size: var(--text-size-lg);
+  line-height: var(--text-height-lg);
+}
+
+.typo_size-4 {
+  font-size: var(--text-size-md);
+  line-height: var(--text-height-md);
+}
