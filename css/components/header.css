@@ -1,0 +1,75 @@
+.header {
+  background-image: url('/img/train.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  padding-top: var(--gutter-sm);
+}
+
+.logo {
+  font-size: var(--text-size-xl);
+  list-style: none;
+  line-height: var(--text-height-xl);
+  color: var(--color-text-contrast);
+}
+
+.menu {
+  padding-top: 26px;
+  background-color: #292929;
+}
+
+.menu__list {
+  display: flex;
+  max-width: 901px;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.menu__item {
+  margin-bottom: var(--gutter-md);
+  margin-right: 72px;
+}
+
+.menu__link {
+  color: var(--color-text-contrast);
+  font-size: var(--text-size-lg);
+  font-weight: 300;
+}
+
+.header__cols {
+  display: flex;
+  justify-content: center;
+}
+
+.header__title {
+  font-size: var(--text-size-xxl);
+  margin-bottom: var(--gutter-lg);
+  color: var(--color-text-contrast);
+  font-weight: 700;
+  max-width: 506px;
+}
+
+.header__right-side {
+  max-width: 729px;
+  width: 100%;
+  padding: 21px;
+}
+
+.header-form__date, .header-form__direction, .header-form__submit {
+  display: flex;
+}
+
+.header-form__item {
+  width: 100%;
+  max-width: 322px;
+}
+
+.header-form__input {
+  width: 100%;
+}
+
+.rotate {
+  width: 24px;
+  margin: 8px;
+  height: 24px;
+}
