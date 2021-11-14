@@ -1,0 +1,57 @@
+.how-it-works {
+  background-image: url('/img/how-it-works.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  padding: 60px 0 60px;
+  color: #ffffff;
+}
+
+.how-it-works__header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.how-it-works__title {
+  align-self: center;
+}
+
+.how-it-works__btn {
+  max-width: 325px;
+  padding: 16px;
+  width: 100%;
+  border-radius: 5px;
+  border: 1px solid var(--color-text-contrast);
+  background-color: transparent;
+  color: var(--color-text-contrast);
+  text-align: center;
+}
+
+.how-it-works__btn:hover {
+  background-color: var(--color-theme-light);
+  color: var(--color-text-accent);
+  border: 1px solid var(--color-text-main);
+}
+
+.how-it-works__btn:active {
+  background-color: var(--color-theme-accent);
+  color: var(--color-text-main);
+}
+
+.how-it-works__cols {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1024px;
+  margin: 97px auto 0;
+}
+
+.how-it-works__card {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.how-it-works__text {
+  max-width: 226px;
+  margin: 34px auto 0;
+}

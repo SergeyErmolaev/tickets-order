@@ -1,0 +1,16 @@
+.about-us {
+  padding: 144px 0 115px;
+}
+
+.about-us__title {
+  margin-bottom: 33px;
+}
+
+.about-us__text {
+  padding-left: 19px;
+  border-left: 9px solid var(--color-theme-accent);
+}
+
+.about-us__par {
+  margin-bottom: 33px;
+}

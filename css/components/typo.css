@@ -15,6 +15,7 @@
 .typo_size-2 {
   font-size: var(--text-size-xl);
   line-height: var(--text-height-xl);
+  font-weight: 500;
 }
 
 .typo_size-3 {
@@ -25,4 +26,9 @@
 .typo_size-4 {
   font-size: var(--text-size-md);
   line-height: var(--text-height-md);
+}
+
+.typo_size-5 {
+  font-size: var(--text-size-sm);
+  line-height: var(--text-height-sm);
 }

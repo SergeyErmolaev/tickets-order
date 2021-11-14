@@ -1,0 +1,91 @@
+.contacts-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+}
+.contacts__left-side {
+  max-width: 510px;
+  width: 100%;
+  margin-left: 90px;
+}
+.contacts__link {
+  color: var(--color-text-contrast);
+  display: inline-block;
+  max-width: 275px;
+  padding-left: 65px;
+}
+
+.contacts__list-item:hover .contacts__link {
+  color: var(--color-text-hover);
+}
+
+.contacts__list-item:active .contacts__link {
+  color: var(--color-text-accent);
+}
+
+.contacts__title,
+.contacts__list-item {
+  margin-bottom: 30px;
+  position: relative;
+}
+
+.icon-svg {
+  left: 0;
+}
+
+.contacts__right-side {
+  margin-left: 90px;
+  flex: 1;
+}
+
+.input-btn-wrapper {
+  margin-top: 15px;
+  margin-bottom: 44px;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.contacts-form__input {
+  height: 60px;
+  max-width: 447px;
+  width: 100%;
+  padding-left: 21px;
+  margin-right: 33px;
+}
+
+.contacts-form__btn {
+  height: 60px;
+  background-color: transparent;
+  border: 1px solid var(--color-text-contrast);
+  color: var(--color-text-contrast);
+  padding: 17px 11px 17px 19px;
+  cursor: pointer;
+  border-radius: 3px;
+}
+
+.contacts-form__btn:hover {
+  background-color: var(--color-theme-accent);
+  color: var(--color-text-main);
+}
+
+.contacts-form__btn:active {
+  background-color: var(--color-theme-light);
+  color: var(--color-text-main);
+}
+
+.socials__list {
+  display: flex;
+}
+
+.socials__list-item {
+  position: relative;
+}
+
+.socials__link {
+  display: inline-block;
+  margin-right: 48px;
+}
+
+object.icon-svg {
+  pointer-events: none;
+}

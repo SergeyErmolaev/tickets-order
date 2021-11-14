@@ -22,21 +22,21 @@
       <div class="container">
         <ul class="menu__list">
           <li class="menu__item">
-            <a class="menu__link" href="/">О нас</a>
+            <a class="menu__link" href="#aboutUs">О нас</a>
           </li>
           <li class="menu__item">
-            <a class="menu__link" href="/">Как это работает</a>
+            <a class="menu__link" href="#howItWorks">Как это работает</a>
           </li>
           <li class="menu__item">
-            <a class="menu__link" href="/">Отзывы</a>
+            <a class="menu__link" href="#testimonials">Отзывы</a>
           </li>
           <li class="menu__item">
-            <a class="menu__link" href="/">Контакты</a>
+            <a class="menu__link" href="#contacts">Контакты</a>
           </li>
         </ul>
       </div>
     </nav>
-    <div class="container">
+    <div class="container header-form__container">
       <div class="header__cols">
         <div class="header__left-side">
           <h1 class="header__title"><span class="text-thin">Вся жизнь -</span> путешествие!</h1>
@@ -46,31 +46,35 @@
             
             <div class="header-form__direction">
               <h2 class="header-form__title">Направление</h2>
-              <div class="header-form__item">
-                <input class="header-form__input" type="text" placeholder="Откуда">
-                <img class="header-form__icon" src="./img/svg/pinmap.svg" alt="метка на карте">
-              </div>
-              <div class="rotate">
-                <img src="./img/png/rotate.png" alt="замена">
-              </div>
-              <div class="header-form__item">
-                <input class="header-form__input" type="text" placeholder="Куда">
-                <img class="header-form__icon" src="./img/svg/pinmap.svg" alt="метка на карте">
+              <div class="header-form__items">
+                <div class="header-form__item">
+                  <input class="header-form__input" type="text" placeholder="Откуда">
+                  <img class="header-form__icon" src="./img/svg/pinmap.svg" alt="метка на карте">
+                </div>
+                <div class="rotate">
+                  <img src="./img/png/rotate.png" alt="замена">
+                </div>
+                <div class="header-form__item">
+                  <input class="header-form__input" type="text" placeholder="Куда">
+                  <img class="header-form__icon" src="./img/svg/pinmap.svg" alt="метка на карте">
+                </div>
               </div>
             </div>
             
             <div class="header-form__date">
               <h2 class="header-form__title">Дата</h2>
-              <div class="header-form__item">
-                <input id="dateFrom" class="header-form__input" type="text" placeholder="ДД/ММ/ГГ">
-                <img class="header-form__icon" src="./img/svg/calendar.svg" alt="календарь">
-              </div>
-              <div class="rotate">
-                
-              </div>
-              <div class="header-form__item">
-                <input id="dateWhere" class="header-form__input" type="text" placeholder="ДД/ММ/ГГ">
-                <img class="header-form__icon" src="./img/svg/calendar.svg" alt="календарь">
+              <div class="header-form__items">
+                <div class="header-form__item">
+                  <input id="dateFrom" class="header-form__input" type="text" placeholder="ДД/ММ/ГГ">
+                  <img class="header-form__icon" src="./img/svg/calendar.svg" alt="календарь">
+                </div>
+                <div class="rotate">
+                  
+                </div>
+                <div class="header-form__item">
+                  <input id="dateWhere" class="header-form__input" type="text" placeholder="ДД/ММ/ГГ">
+                  <img class="header-form__icon" src="./img/svg/calendar.svg" alt="календарь">
+                </div>
               </div>
             </div>
             <div class="header-form__submit">
@@ -84,15 +88,189 @@
     </div>
   </header>
   <main>
+    <!-- About us -->
+    <section id="aboutUs" class="about-us">
+      <div class="container">
+        <h2 class="about-us__title upper-case typo_size-2">О нас</h2>
+        <div class="about-us__text">
+          <p class="about-us__par typo_size-4">Мы рады видеть вас! Мы работаем для Вас с 2003 года. 14 лет мы наблюдаем, как с каждым днем все больше людей заказывают жд билеты через интернет.</p>
+          <p class="about-us__par typo_size-4">Сегодня можно заказать железнодорожные билеты онлайн всего в 2 клика, но стоит ли это делать?<br>Мы расскажем о преимуществах заказа через интернет.</p>
+          <p class="about-us__par typo_size-4"><strong>Покупать жд билеты дешево можно за 90 суток до отправления поезда.<br>Благодаря динамическому ценообразованию цена на билеты в это время самая низкая.</strong></p>
+        </div>
+      </div>
+    </section>
+    <!-- /About us -->
+    <!-- How it works -->
+    <section id="howItWorks" class="how-it-works">
+      <div class="container">
+        <div class="how-it-works__header">
+          <h2 class="how-it-works__title upper-case typo_size-2">Как это работает</h2>
+          <a href="/" class="how-it-works__btn typo_size-4">Узнать больше</a>
+        </div>
+        <div class="how-it-works__cols">
+          <div class="col col-md-4">
+            <section class="how-it-works__card">
+              <img src="./img/svg/display.svg" alt="компьютер" class="how-it-works__picture">
+              <p class="how-it-works__text typo_size-4">Удобный заказ<br> на сайте</p>
+            </section>
+          </div>
+          <div class="col col-md-4">
+            <section class="how-it-works__card">
+              <img src="./img/svg/office.svg" alt="офис" class="how-it-works__picture">
+              <p class="how-it-works__text typo_size-4">Нет необходимости ехать в офис</p>
+            </section>
+          </div>
+          <div class="col col-md-4">
+            <section class="how-it-works__card">
+              <img src="./img/svg/globe.svg" alt="земной шар" class="how-it-works__picture">
+              <p class="how-it-works__text typo_size-4">Огромный выбор направлений</p>
+            </section>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- /How it works -->
+    <!-- Testimonials -->
+    <section id="testimonials" class="testimonials">
+      <div class="container">
+        <div class="testimonial__header">
+          <h2 class="testimonial__title upper-case typo_size-2">отзывы</h2>
+        </div>
+        <!-- testimonial slider -->
+        <div class="simple-slider simple-slider-first testimonial-slider">
+          <div class="slider-wrapper">
+          <!-- First slide -->
+          <div class="slider-slide" style="background-image: url('path/to/image')">
+            <div class="testimonials__card">
+              <div class="testimonials__picture">
+                <img src="/img/user-f.png" alt="Екатерина">
+              </div>
+              <figure class="testimonials__text">
+                <figcaption class="testimonials__user typo_size-4">Екатерина Вальнова</figcaption>
+                <blockquote class="testimonials__quote typo_size-5">
+                  <p>Доброжелательные подсказки на всех этапах помогут правильно заполнить поля и без затруднений купить авиа или ж/д билет, даже если вы заказываете онлайн билет впервые.</p>
+                </blockquote>
+              </figure>
+            </div>
+          </div>
 
+          <!-- Second slide -->
+          <div class="slider-slide" style="background-image: url('path/to/image')">
+            <div class="testimonials__card">
+              <div class="testimonials__picture">
+                <img src="/img/user-m.png" alt="Евгений">
+              </div>
+              <figure class="testimonials__text">
+                <figcaption class="testimonials__user typo_size-4">Евгений Стрыкало</figcaption>
+                <blockquote class="testimonials__quote typo_size-5">
+                  <p>СМС-сопровождение до посадки Сразу после оплаты ж/д билетов и за 3 часа до отправления мы пришлем вам СМС-напоминание о поездке.</p>
+                </blockquote>
+              </figure>
+            </div>
+          </div>
+
+          <!-- Third slide -->
+          <div class="slider-slide" style="background-image: url('path/to/image')">
+            <div class="testimonials__card">
+              <div class="testimonials__picture">
+                <img src="/img/user-f.png" alt="Екатерина">
+              </div>
+              <figure class="testimonials__text">
+                <figcaption class="testimonials__user typo_size-4">Екатерина Вальнова</figcaption>
+                <blockquote class="testimonials__quote typo_size-5">
+                  <p>Доброжелательные подсказки на всех этапах помогут правильно заполнить поля и без затруднений купить авиа или ж/д билет, даже если вы заказываете онлайн билет впервые.</p>
+                </blockquote>
+              </figure>
+            </div>
+          </div>
+
+          <!-- Fourth slide -->
+          <div class="slider-slide" style="background-image: url('path/to/image')">
+            <div class="testimonials__card">
+              <div class="testimonials__picture">
+                <img src="/img/user-m.png" alt="Евгений">
+              </div>
+              <figure class="testimonials__text">
+                <figcaption class="testimonials__user typo_size-4">Евгений Стрыкало</figcaption>
+                <blockquote class="testimonials__quote typo_size-5">
+                  <p>СМС-сопровождение до посадки Сразу после оплаты ж/д билетов и за 3 часа до отправления мы пришлем вам СМС-напоминание о поездке.</p>
+                </blockquote>
+              </figure>
+            </div>
+          </div>
+
+          <!-- Fifth slide -->
+          <div class="slider-slide" style="background-image: url('path/to/image')">
+            <div class="testimonials__card">
+              <div class="testimonials__picture">
+                <img src="/img/user-f.png" alt="Екатерина">
+              </div>
+              <figure class="testimonials__text">
+                <figcaption class="testimonials__user typo_size-4">Екатерина Вальнова</figcaption>
+                <blockquote class="testimonials__quote typo_size-5">
+                  <p>Доброжелательные подсказки на всех этапах помогут правильно заполнить поля и без затруднений купить авиа или ж/д билет, даже если вы заказываете онлайн билет впервые.</p>
+                </blockquote>
+              </figure>
+            </div>
+          </div>
+        </div>
+
+        <!--Pagination-->
+        <div class="slider-pagination"></div>
+
+      </div>
+    </section>
+    <!-- /Testimonials -->
   </main>
-  <footer>
-
+  <footer id="contacts" class="footer">
+    <div class="container">
+      <div class="contacts-wrapper">
+        <div class="contacts__left-side">
+          <h2 class="contacts__title typo_size-3">Свяжитесь с нами</h2>
+          <ul class="contacts__list">
+            <li class="contacts__list-item typo_size-4"><a class="contacts__link svg__link" href="tel:88000000000"><object type="image/svg+xml" data="img/svg/phone.svg" class="icon-svg position-absolute"></object>8 (800) 000 00 00</a></li>
+            <li class="contacts__list-item typo_size-4"><a class="contacts__link svg__link" href="mailto:inbox@mail.ru"><object type="image/svg+xml" data="img/svg/mail.svg" class="icon-svg position-absolute"></object>inbox@mail.ru</a></li>
+            <li class="contacts__list-item typo_size-4"><a class="contacts__link svg__link" href="/"><object type="image/svg+xml" data="img/svg/scype.svg" class="icon-svg position-absolute"></object>tu.train.tickets</a></li>
+            <li class="contacts__list-item typo_size-4"><a class="contacts__link svg__link" href="/"><object type="image/svg+xml" data="img/svg/pinmap.svg" class="icon-svg position-absolute"></object>г. Москва ул. Московская 27-35 555 555</a></li>
+          </ul>
+        </div>
+        <div class="contacts__right-side">
+          <h2 class="contacts__title typo_size-3">Подписка</h2>
+          <form class="contacts-form typo_size-4" action="/" method="post">
+            <label for="mail" class="typo_size-4">Будьте в курсе событий</label>
+            <div class="input-btn-wrapper">
+              <input class="contacts-form__input" type="email" name="email" id="mail" placeholder="e-mail">
+              <button class="typo_size-4 upper-case contacts-form__btn" type="submit">отправить</button>
+            </div>
+          </form>
+          <div class="socials">
+            <h2 class="contacts__title typo_size-3">Подписывайтесь на нас</h2>
+            <ul class="socials__list">
+              <li class="socials__list-item"><a class="socials__link svg__link" href="/"><object type="image/svg+xml" data="img/svg/youtube.svg" class="icon-svg"></object></a></li>
+              <li class="socials__list-item"><a class="socials__link svg__link" href="/"><object type="image/svg+xml" data="img/svg/in.svg" class="icon-svg"></object></a></li>
+              <li class="socials__list-item"><a class="socials__link svg__link" href="/"><object type="image/svg+xml" data="img/svg/google.svg" class="icon-svg"></object></a></li>
+              <li class="socials__list-item"><a class="socials__link svg__link" href="/"><object type="image/svg+xml" data="img/svg/facebook.svg" class="icon-svg"></object></a></li>
+              <li class="socials__list-item"><a class="socials__link svg__link" href="/"><object type="image/svg+xml" data="img/svg/tweeter.svg" class="icon-svg"></object></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
   </footer>
-  <script src="./js/datepicker.js"></script>
+  <script src="/js/datepicker.js"></script>
+  <script src="/js/simpleSlider.min.js"></script>
+  <script src="/js/iconSvg.js"></script>
   <script>
     var dateFrom = new Datepicker('#dateFrom');
     var dateWhere = new Datepicker('#dateWhere');
+  </script>
+  <script>
+    new SimpleSlider('.testimonial-slider', {
+      autoplay: true,
+      slidesPerView: {
+        768: 2,
+      }
+    });
   </script>
 </body>
 </html>

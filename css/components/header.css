@@ -5,6 +5,10 @@
   background-position: center center;
   padding-top: var(--gutter-sm);
   border-bottom: 8px solid var(--color-theme-accent);
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  justify-content: space-between;
 }
 
 .logo {
@@ -37,10 +41,16 @@
   font-weight: 300;
 }
 
+.header-form__container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+}
+
 .header__cols {
   display: flex;
   justify-content: center;
-  margin-top: 253px;
 }
 
 .header__left-side {
@@ -83,6 +93,11 @@
   margin-bottom: var(--gutter-xs);
   width: 100%;
   flex-basis: 100%;
+}
+
+.header-form__items {
+  display: flex;
+  flex-grow: 1;
 }
 
 .header-form__item {
@@ -130,6 +145,17 @@
   padding: 16px;
   background-color: var(--color-theme-accent);
   border-radius: 5px;
+  cursor: pointer;
+}
+
+.header-form__submit-btn:hover {
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.header-form__submit-btn:active {
+  background-color: var(--color-text-contrast);
+  color: var(--color-text-accent);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 
 .datepicker {
@@ -142,4 +168,66 @@
 
 .datepicker__container thead {
   display: none;
+}
+
+header.datepicker__header {
+  background: #fff;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+span.datepicker__title {
+  color: #000;
+}
+
+.datepicker__prev {
+  background-image: none;
+}
+
+a.datepicker__prev:before {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 0;
+  z-index: 100;
+  color: #000 !important;
+  border: 5px solid transparent;
+  border-right: 5px solid #000;
+  top: 50%;
+  left: 50%;
+  transform: translate(-80%, -50%);
+}
+
+.datepicker__next {
+  background-image: none;
+}
+
+a.datepicker__next:before {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 0;
+  border: 5px solid transparent;
+  border-left: 5px solid #000;
+  top: 50%;
+  left: 50%;
+  transform: translate(-15%, -50%);
+}
+
+@media screen and (max-width: 991px) {
+  .header__cols {
+    flex-wrap: wrap;
+  }
+  .header-form__items {
+    flex-wrap: wrap;
+  }
+  .header-form__item {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .header__title {
+    word-break: break-word;
+  }
 }

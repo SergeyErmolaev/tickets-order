@@ -1,16 +1,22 @@
 :root {
+  --color-theme-light: #fff;
   --color-theme-accent: #FFA800;
 
+  --color-text-main: #2D2B2F;
   --color-text-secondary: #e5e5e5;
   --color-text-contrast: #fff;
+  --color-text-hover: #FFCA62;
+  --color-text-accent: #FFA800;
 
   --font-family: 'Roboto', sans-serif;
 
+  --text-size-sm: 18px;
   --text-size-md: 24px;
   --text-size-lg: 30px;
   --text-size-xl: 36px;
   --text-size-xxl: 72px;
 
+  --text-height-sm: 21.09px;
   --text-height-md: 28.13px;
   --text-height-lg: 35.16px;
   --text-height-xl: 42.19px;
@@ -24,4 +30,8 @@
 
 html {
   font-family: var(--font-family);
+}
+
+.position-absolute {
+  position: absolute;
 }
